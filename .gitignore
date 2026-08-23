@@ -1,0 +1,7 @@
+# Berkas database SQLite yang dihasilkan saat aplikasi berjalan
+*.db
+*.db-shm
+*.db-wal
+
+# Hasil kompilasi
+*.exe
