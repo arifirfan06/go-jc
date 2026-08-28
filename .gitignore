@@ -1,0 +1,20 @@
+# Environment file
+.env
+
+# Binary output
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+main
+api
+
+# Test binaries
+*.test
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
