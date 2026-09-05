@@ -102,6 +102,7 @@ func (m *PostgresDBRepo) AllGenres() ([]*models.Genre, error) {
 
 // InsertMovie inserts one movie into the database.
 func (m *PostgresDBRepo) InsertMovie(movie models.Movie) (int, error) {
+	movie.ID = 0
 	err := m.DB.Create(&movie).Error
 	if err != nil {
 		return 0, err

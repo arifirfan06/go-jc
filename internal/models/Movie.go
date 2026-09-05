@@ -3,7 +3,7 @@ package models
 import "time"
 
 type Movie struct {
-	ID          int       `json:"id" gorm:"primaryKey"`
+	ID          int       `json:"id" gorm:"primaryKey;autoIncrement"`
 	Title       string    `json:"title" gorm:"column:title"`
 	ReleaseDate time.Time `json:"release_date" gorm:"column:release_date"`
 	RunTime     int       `json:"runtime" gorm:"column:runtime"`
@@ -17,7 +17,7 @@ type Movie struct {
 }
 
 type Genre struct {
-	ID        int       `json:"id" gorm:"primaryKey"`
+	ID        int       `json:"id" gorm:"primaryKey;autoIncrement"`
 	Genre     string    `json:"genre" gorm:"column:genre"`
 	Checked   bool      `json:"checked" gorm:"-"`
 	CreatedAt time.Time `json:"-" gorm:"column:created_at"`
@@ -25,7 +25,7 @@ type Genre struct {
 }
 
 type MovieGenre struct {
-	ID      int `gorm:"primaryKey"`
+	ID      int `gorm:"primaryKey;autoIncrement"`
 	MovieID int `gorm:"column:movie_id"`
 	GenreID int `gorm:"column:genre_id"`
 }
