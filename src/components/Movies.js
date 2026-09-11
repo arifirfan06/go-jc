@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Movies = () => {
     const [movies, setMovies] = useState([]);
 
-    useEffect( () => {
+    useEffect(() => {
         const headers = new Headers();
         headers.append("Content-Type", "application/json");
 
@@ -24,7 +24,7 @@ const Movies = () => {
 
     }, []);
 
-    return(
+    return (
         <div>
             <h2>Movies</h2>
             <hr />
@@ -44,9 +44,9 @@ const Movies = () => {
                                     {m.title}
                                 </Link>
                             </td>
-                            <td>{m.release_date}</td>
+                            <td>{new Date(m.release_date).toLocaleDateString('id-ID', { year: 'numeric', month: 'short', day: 'numeric' })}</td>
                             <td>{m.mpaa_rating}</td>
-                        </tr>    
+                        </tr>
                     ))}
                 </tbody>
             </table>
