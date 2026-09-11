@@ -136,12 +136,12 @@ function App() {
                   >
                     Manage Catalogue
                   </Link>
-                  <Link
+                  {/* <Link
                     to="/graphql"
                     className="list-group-item list-group-item-action"
                   >
                     GraphQL
-                  </Link>
+                  </Link> */}
                 </>
               )}
             </div>

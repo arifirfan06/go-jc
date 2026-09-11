@@ -5,7 +5,7 @@ import App from './App';
 import EditMovie from './components/EditMovie';
 import ErrorPage from './components/ErrorPage';
 import Genres from './components/Genres';
-import GraphQL from './components/GraphQL';
+// import GraphQL from './components/GraphQL';
 import Home from './components/Home';
 import Login from './components/Login';
 import ManageCatalogue from './components/ManageCatalogue';
@@ -48,10 +48,10 @@ const router = createBrowserRouter([
         path: "/manage-catalogue",
         element: <ManageCatalogue />,
       },
-      {
-        path: "/graphql",
-        element: <GraphQL />,
-      },
+      // {
+      //   path: "/graphql",
+      //   element: <GraphQL />,
+      // },
       {
         path: "/login",
         element: <Login />,
