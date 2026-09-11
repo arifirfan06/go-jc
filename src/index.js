@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
+import './index.css';
 import EditMovie from './components/EditMovie';
 import ErrorPage from './components/ErrorPage';
 import Genres from './components/Genres';
